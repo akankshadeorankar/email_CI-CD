@@ -20,7 +20,7 @@ jobs:
           python-version: '3.11'
  
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: pip install -r requirement.txt
  
       - name: Send email
         env:
@@ -28,3 +28,4 @@ jobs:
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
         run: python send_email.py
+
