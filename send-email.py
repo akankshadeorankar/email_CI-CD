@@ -2,7 +2,6 @@ import smtplib
 
 from email.mime.text import MIMEText
 
-
 SMTP_SERVER = "mail.eidiko-india.com"
 
 SMTP_PORT = 465
@@ -29,4 +28,5 @@ with smtplib.SMTP_SSL(SMTP_SERVER, SMTP_PORT) as server:
  
 print("Email sent successfully")
  
+
 
